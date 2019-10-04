@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="map_server" type="map_server" name="map_server" args="$(find glennan5_map)/maps/qualitymap_rec.yaml" required="true" />
+</launch>
+

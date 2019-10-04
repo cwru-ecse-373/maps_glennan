@@ -1,0 +1,6 @@
+image: qualitymap_rec.png
+resolution: 0.025
+origin: [-27.1, -13.7, 0]
+occupied_thresh: 0.85
+free_thresh: 0.15
+negate: 0

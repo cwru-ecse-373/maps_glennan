@@ -1,0 +1,6 @@
+image: glennan5_map_small.png
+resolution: 0.1048828112057436
+origin: [-27.1, -13.7, 0]
+occupied_thresh: 0.8
+free_thresh: 0.7
+negate: 1

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.10)
 project(maps_glennan)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -189,7 +189,13 @@ include_directories(
 #   # myfile2
 #   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 # )
-
+install(DIRECTORY maps
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  )
+install(DIRECTORY launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  FILES_MATCHING PATTERN "*.launch"
+  )
 #############
 ## Testing ##
 #############
